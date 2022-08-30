@@ -79,7 +79,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>
         {isFingerPrintSupported ? 
-        'your device is compatible with FingerPrint': 'Fingerprint not available'     
+        'your device is supported with FingerPrint': 'Fingerprint not available'     
       }
       </Text>
       <TouchableOpacity
