@@ -77,11 +77,13 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>
-        {isFingerPrintSupported ? 
-        'your device is supported for FingerPrint': 'Fingerprint not available'     
-      }
-      </Text>
+      <View>
+        <Text>
+          {isFingerPrintSupported ? 
+            'your device is supported for FingerPrint': 'Fingerprint not available'     
+          }
+        </Text>
+      </View>
       <TouchableOpacity
         style = {styles.button}
         onPress={() => handleFingerPrintAuth()}
